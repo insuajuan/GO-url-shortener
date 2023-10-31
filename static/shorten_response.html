@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>URL Shortener</title>
+</head>
+<body>
+<h2>URL Shortener</h2>
+<p>Original URL: {{.OriginalURL}}</p>
+<p>Shortened URL: <a href="{{.ShortenedURL}}">{{.ShortenedURL}}</a></p>
+<form method="post" action="/shorten">
+    <input type="text" name="url" placeholder="Enter a URL">
+    <input type="submit" value="Shorten">
+</form>
+</body>
+</html>
